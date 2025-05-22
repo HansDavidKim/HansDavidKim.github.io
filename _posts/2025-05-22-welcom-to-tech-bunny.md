@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Tech Bunny"
-categories: personal
+categories: misc
 ---
 This is Tech blog of Hans, who is majoring in `Economics` and `Computer Science & Engineering` at `Sogang University`, Seoul, South Korea.
 
