@@ -14,3 +14,9 @@ CGPA : 4.0 / 4.3
 - Undergraduate Internship in Machine Learning Laboratory of Sogang University  
 - Former Club Presidenf of SGCC
 - Executive of Release
+
+---
+
+### Awards Received
+- SPC Master : Broze Award (4th)
+- Dean's List : Fall 2023, Spring 2024
