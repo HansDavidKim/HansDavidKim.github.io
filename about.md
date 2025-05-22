@@ -4,4 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Another minimal style of Jekyll theme for writers.
+### Education
+Junior Studenf (BS Course) of Sogang University, Seoul, South Korea 
+Februrary 2023 - Now
+
+### Career
+Undergraduate Internship in Machine Learning Laboratory of Sogang University
+January 2025 - Now
