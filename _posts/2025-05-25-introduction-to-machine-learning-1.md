@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Introduction to Machine Learning 1"
-categories: machine-learning
-tags: [machine-learning]
+categories: Machine-Learning
+tags: [Machine-Learning]
 ---
 A machine learning is a subfield of artificial intelligence, which is based on statistics.
 
