@@ -3,6 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+<div style="text-align: center;">
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=0:6DFFFD,100:0077FF&height=150&section=header&text=Tech%20Bunny🐰&fontSize=90&fontColor=C0F7FF" alt="Tech Bunny Header" />
+</div>
+<br>
 
 ### Education
 - Junior Student (BS Course) of Sogang University, Seoul, South Korea  
