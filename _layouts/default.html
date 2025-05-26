@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <link rel="icon" href="{{ '/assets/images/favicon.png?v=2' | relative_url }}" type="image/png" />
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     {% include head.html %}
+
+    <link rel="icon" href="{{ '/assets/images/favicon.png?v=2' | relative_url }}" type="image/png" />
+
+    <!-- Mermaid.js for diagrams -->
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
       mermaid.initialize({ startOnLoad: true });
     </script>
+
+    <!-- MathJax for LaTeX -->
     <script>
       window.MathJax = {
         tex: {
@@ -18,8 +27,8 @@
         }
       };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
+
   </head>
 
   <body>
@@ -27,7 +36,7 @@
       <header class="site-header">
         {% include header.html %}
       </header>
-      
+
       <div class="site-body wrapper">
         <aside class="site-sidebar" id="site-sidebar">
           {% if page.toc %}
@@ -36,6 +45,7 @@
             {% include sidebar.html %}
           {% endif %}
         </aside>
+
         <main class="site-main" id="site-main" aria-label="Content" tabindex="1">
           {{ content }}
           <footer class="site-footer">
@@ -45,5 +55,4 @@
       </div>
     </div>
   </body>
-
 </html>

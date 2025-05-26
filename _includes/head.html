@@ -4,15 +4,10 @@
 <link rel="icon" href="{{ '/assets/images/favicon.png?v=2' | relative_url }}" type="image/png" />
 
 {% seo %}
-
 {% feed_meta %}
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
-{% endif %}
-
-{% if page.math %}
-  {% include mathjax.html %}
 {% endif %}
 
 <!-- Google Fonts -->
@@ -45,5 +40,27 @@
 <!-- End selecting skin -->
 
 <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+<!-- Mermaid.js (Always included) -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<!-- MathJax (conditionally included) -->
+{% if page.math %}
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
+{% endif %}
 
 {% include custom-head.html %}
