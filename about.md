@@ -23,4 +23,5 @@ CGPA : 4.0 / 4.3
 
 ### Awards Received
 - SPC Master : Broze Award (4th)
-- Dean's List : Fall 2023, Spring 2024
+- Dean's List : Fall 2023
+- Dean's List : Spring 2024
