@@ -53,7 +53,7 @@ $\mathbb{E}[x|y]=y+\sigma^2\nabla\log p(y)$
 ---
 ###### 1. Marginalize the density
 - $\nabla\log p(y)={\nabla p(y)\over p(y)}$
-- $\nabla p(y)=\nabla\int p(y|x)p(x)dx=\int\nabla p(y|x)p(x)dx$ with some assumption
+- $\nabla p(y)=\nabla\int p(y|x)p(x)dx=\int\nabla p(y|x)p(x)dx with some assumption$
 
 ###### 2. Gaussian Likelihood
 We know that $p(y|x)\propto \exp(-{1\over 2\sigma^2}\left\lVert y - x \right\rVert)$ so that it would not be difficult to differentiate.
