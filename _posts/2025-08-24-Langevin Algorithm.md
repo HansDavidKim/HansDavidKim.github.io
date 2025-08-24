@@ -33,7 +33,7 @@ $$\mathcal{L}_{total}={1\over N}\sum_{i=1}^N{\left\lVert \hat{x}_i - x_i \right\
 우리는 주어진 값을 최소화 시키고 싶고, 이때 주어진 함수가 $\hat{x}$에 대해 미분 가능하다는 가정 하에, 위를 미분하여 정리하면 $2\hat{x}-2\mathbb{E}[x|y]=0$이 성립함을 알 수 있고, 곧 $\hat{x}=\mathbb{E}[x|y]$일 때 최적임을 알 수 있다.
 
 
-![[Pasted image 20250825034759.png]]
+![MAP][/assets/images/map.png]
 
 주어진 x와 y 모두 정규 분포를 따른다고 가정 시, 주어진 y에 대해 가장 높은 확률의 x에 대한 추정치인 **Maximum A Posteriori Esimate (MAP)** 이 위의 최적화 문제의 해이다.
 

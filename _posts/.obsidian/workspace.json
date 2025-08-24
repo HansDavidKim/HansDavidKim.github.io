@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-08-24-Langevin Algorithm.md",
+                "file": "2025-06-26-vec2vec.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-24-Langevin Algorithm"
+              "title": "2025-06-26-vec2vec"
             }
           }
         ],
@@ -200,6 +200,8 @@
   },
   "active": "f9925812a7dfaa8c",
   "lastOpenFiles": [
+    "map.png",
+    "2025-08-24-Langevin Algorithm.md",
     "Pasted image 20250825051717.png",
     "Pasted image 20250825051640.png",
     "Pasted image 20250825044120.png",
@@ -207,7 +209,6 @@
     "Pasted image 20250825034759.png",
     "Pasted image 20250825025720.png",
     "2025-08-10.md",
-    "2025-08-24-Langevin Algorithm.md",
     "2025-05-27-fe-2.md",
     "2025-07-11-dialogue.md",
     "Cross-Architecture Knowledge Distillation via Vec2Vec Embedding Translation.md",
