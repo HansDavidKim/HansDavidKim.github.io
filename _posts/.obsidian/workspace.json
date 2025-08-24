@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cross-Architecture Knowledge Distillation via Vec2Vec Embedding Translation.md",
+                "file": "2025-08-25-Langevin Algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cross-Architecture Knowledge Distillation via Vec2Vec Embedding Translation"
+              "title": "2025-08-25-Langevin Algorithm"
+            }
+          },
+          {
+            "id": "f9925812a7dfaa8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-08-25-Langevin Algorithm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-25-Langevin Algorithm"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -175,6 +189,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -183,9 +198,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e448258485084694",
+  "active": "f9925812a7dfaa8c",
   "lastOpenFiles": [
+    "Pasted image 20250825051717.png",
+    "Pasted image 20250825051640.png",
+    "Pasted image 20250825044120.png",
+    "Pasted image 20250825035726.png",
+    "Pasted image 20250825034759.png",
+    "Pasted image 20250825025720.png",
+    "2025-08-10.md",
+    "2025-08-25-Langevin Algorithm.md",
     "2025-05-27-fe-2.md",
+    "2025-07-11-dialogue.md",
     "Cross-Architecture Knowledge Distillation via Vec2Vec Embedding Translation.md",
     "2025-05-26-divide.md",
     "2025-05-26-concurrent-programming-1.md",
