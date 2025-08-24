@@ -8,7 +8,7 @@ tags:
 math: true
 ---
 ### Background
-#### De-noisingAutoencoder
+#### De-noising Autoencoder
 Input Data $x$에 대해 Gaussian Noise $y=x+\epsilon$ 을 입력으로 받아, clean data $x$로 복원하는 방식의 Autoencoder
 
 ###### Mainfold Hypothesis
