@@ -30,16 +30,17 @@ $$\mathcal{L}_{total}={1\over N}\sum_{i=1}^N{\left\lVert \hat{x}_i - x_i \right\
 이를 최소화 시키는 것은 곧 $\arg\min_{\hat{x}}\mathbb{E}[{\left\lVert \hat{x} - x \right\rVert}^2 | y]$을 푸는 것과 동일하다. ($\hat{x}=x$일 때 최소)
 이때 $\mathbb{E}[{\left\lVert \hat{x} - x \right\rVert}^2|y]=\mathbb{E}[(\hat{x}-x)^\intercal (\hat{x}-x)|y]=\left\lVert \hat{x}\right\rVert^2-2\hat{x}^\intercal \mathbb{E}[x|y]+\mathbb{E}[\left\lVert x\right\rVert^2|y]$이 성립한다.
 
-우리는 주어진 값을 최소화 시키고 싶고, 이때 주어진 함수가 $\hat{x}$에 대해 미분 가능하다는 가정 하에, 위를 미분하여 정리하면 $2\hat{x}-2\mathbb{E}[x|y]=0$이 성립함을 알 수 있고, 곧 $\hat{x}=\mathbb{E}[x|y]$일 때 최적임을 알 수 있다.
+우리는 주어진 값을 최소화 시키고 싶고, 이때 주어진 함수가 $\hat{x}$에 대해 미분 가능하다는 가정 하에, 위를 미분하여 정리하면 
+$$2\hat{x}-2\mathbb{E}[x|y]=0\iff\hat{x}=\mathbb{E}[x|y]$$
 
 
-![MAP][/assets/images/map.png]
+![MAP](/assets/images/map.png)
 
 주어진 x와 y 모두 정규 분포를 따른다고 가정 시, 주어진 y에 대해 가장 높은 확률의 x에 대한 추정치인 **Maximum A Posteriori Esimate (MAP)** 이 위의 최적화 문제의 해이다.
 
 하지만 만약에 Prior distribution이 저런 Gaussian Distribution이 아닌 Mixture of Gaussian 형태라고 한다면 오히려 Denoiser는 평균을 학습하며 blurry 한 image인 $\hat{x}$을 출력하게 된다.
 
-![[Pasted image 20250825035726.png]]
+![MAP](/assets/images/mog.png)
 
 Posterior Mean이 비록 평균적으로는 좋은 추정치이기는 하나, 개별 output 관점에서 보았을 때는 항상 최적의 해는 아닐 수 있다. 그렇다면 어떻게 이 문제를 해결해야 할까?
 
@@ -63,7 +64,7 @@ $\nabla p(y)=\int -{1\over\sigma^2}(y-x)p(y|x)p(x)dx=-{1\over\sigma^2}y\int p(y|
 which can be shortened as $\nabla\log p(y)=-{1\over\sigma^2}(y-\mathbb{E}[x|y])$
 
 ---
-![[Pasted image 20250825044120.png]]
+![MAP](/assets/images/compass.png)
 이때 Tweedie's formula는 noisy image를 가장 높은 확률 분포로 이끄는 de-noising step으로 이해할 수 있고, 이를 반복하여 적용시켜, 확률 분포 상의 local minima로 수렴(gradient ascent의 일종) 시킬 수 있다.
 
 하지만 unknown distribution으로부터 direct 하게 score를 계산하는 것은 어려우므로 denoising autoencoder를 일종의 score estimate로 활용
@@ -77,7 +78,7 @@ $$x_{t+1}=x_t+{\eta\over\sigma^2}(s_theta(x_t)-x_t)+\sqrt{2\eta}z\,\,,\,\,z\sim 
 
 이러한 랜덤 변수 z를 통해 한 곳에 수렴하지 않고, local minima 주변부로 모이게 되는 효과를 볼 수 있다.
 
-![[Pasted image 20250825051717.png]]
+![MAP](/assets/images/comparison_langevin.png)
 
 이를 통해 원본 이미지에 가까운 샘플들을 뽑을 수 있게 된다.
 (파란색 : 생성된 이미지, 주황색 : 원본 이미지)
