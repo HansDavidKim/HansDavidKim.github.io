@@ -28,7 +28,7 @@ Loss function은 간단하게 $\mathcal{L}={\left\lVert \hat{x} - x \right\rVert
 이때 sample $N$개에 대해선 다음과 같이 기술할 수 있다.
 $$\mathcal{L}_{total}={1\over N}\sum_{i=1}^N{\left\lVert \hat{x}_i - x_i \right\rVert}^2$$
 이를 최소화 시키는 것은 곧 $\arg\min_{\hat{x}}\mathbb{E}[{\left\lVert \hat{x} - x \right\rVert}^2 | y]$을 푸는 것과 동일하다. ($\hat{x}=x$일 때 최소)
-이때 $\mathbb{E}[{\left\lVert \hat{x} - x \right\rVert}^2|y]=\mathbb{E}[(\hat{x}-x)^\intercal (\hat{x}-x)|y]=\left\lVert \hat{x}\right\rVert^2-2\hat{x}^\intercal \mathbb{E}[x|y]+\mathbb{E}[\left\lVert x\right\rVert^2|y]$이 성립한다.
+이때 $\mathbb{E}[{\left\lVert \hat{x} - x \right\rVert}^2|y]=\mathbb{E}[(\hat{x}-x)^\intercal (\hat{x}-x)|y]=\left\lVert \hat{x}\right\rVert^2-2\hat{x}^\intercal \mathbb{E}[x|y]+\mathbb{E}[\left\lVert x\right\rVert^2|y]$ 이 성립한다.
 
 우리는 주어진 값을 최소화 시키고 싶고, 이때 주어진 함수가 $\hat{x}$에 대해 미분 가능하다는 가정 하에, 위를 미분하여 정리하면 
 $$2\hat{x}-2\mathbb{E}[x|y]=0\iff\hat{x}=\mathbb{E}[x|y]$$
